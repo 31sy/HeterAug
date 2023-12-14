@@ -50,7 +50,7 @@ class LIPDataValSet(data.Dataset):
     def __getitem__(self, index):
         val_item = self.val_list[index]
         # Load training image
-        im_path = os.path.join(self.root, self.corruption,self.corruption+'_' + str(self.severity+1), val_item + '.jpg')
+        im_path = os.path.join(self.root, self.corruption,self.corruption+'_' + str(self.severity), val_item + '.jpg')
         
         im = cv2.imread(im_path, cv2.IMREAD_COLOR)
         h, w, _ = im.shape
