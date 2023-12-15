@@ -79,6 +79,8 @@ CUDA_VISIBLE_DEVICES=0,1 python -u train_augpolicy_mixed_noisenet_epsilon.py --b
 ```
 
 By default, the trained model will be saved in `./log/LIP_heteraug` directory. Please read the arguments for more details. 
+The pre-trained resnet-101 model can be downloaded from the link [resnet101-imagenet](https://pan.baidu.com/s/1dO3xYIFfQFkxTcmZkYiGCg?pwd=f42r) 
+提取码：f42r).
 
 ## Evaluation on the clean data
 
