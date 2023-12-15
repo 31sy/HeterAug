@@ -8,9 +8,9 @@ This paper is mainly focused on improving the model robustness under commonly co
 
 Features:
 
-- [x] Three corruption robustness benchmarks, LIP-C, ATR-C and Pascal-Person-Part-C.
-- [x] Pre-trained human parsers on three popular single person human parsing datasets.
-- [x] Training and inference code.
+- Three corruption robustness benchmarks, LIP-C, ATR-C and Pascal-Person-Part-C.
+- Pre-trained human parsers on three popular single person human parsing datasets.
+- Training and inference code.
 
 ## Requirements
 
@@ -94,7 +94,7 @@ CHECKPOINT_PATH should be the path of trained model. If you want to testing with
 python evaluate_c.py --model-restore [CHECKPOINT_PATH] --data-dir ./datasets/LIP-C/blurs/ --severity-level 5 --corruption_type 'glass_blur' 2>&1 | tee ./'SCHP_glass_blur.log'
 ```
 
-The pre-trained models can be downloaded from the link [pre-trained models](链接：https://pan.baidu.com/s/1fS5LAYG99VKoAy9Y4Cy4rw?pwd=im5i ) (提取码：im5i )
+The pre-trained models can be downloaded from the link [pre-trained models](https://pan.baidu.com/s/1fS5LAYG99VKoAy9Y4Cy4rw?pwd=im5i ) (提取码：im5i )
 
 ## The robustness benchmark construction.
 
